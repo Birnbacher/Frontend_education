@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+			form {
+				margin: 0 auto;
+				width: 400px;
+				padding: 1em;
+				border: 1px solid #ccc;
+				border-radius: 1em;
+			}
+
+			
+		</style>
+</head>
+<body>
+<h2>Задать вопрос</h2>
+
+<form action="https://vk.com/away.php?utf=1&to=https%3A%2F%2F60376bfd5435040017722533.mockapi.io%2Fform" method="post">
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="Фамилия Имя Отчество *" autofocus required pattern="^[А-Яа-яЁё\s\-]+$" name="name"><BR><BR>
+      <label for="phone"></label>
+      <input type="text" id="phone" name="phone" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      title="Используйте формат: +7 (777) 777-77-77" placeholder="Телефон *" autofocus required ><BR><BR>
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Email" autofocus pattern="^\S+@\S+\.\S+$" title="example@mail.com"><BR><BR>
+      <input type="submit" value="Отправить запрос">
+ 	
+</form> 
+
+</body>
+</html>
